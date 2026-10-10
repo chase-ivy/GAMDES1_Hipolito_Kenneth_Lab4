@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://ut4ml1wlt8da"]
+
+[ext_resource type="PackedScene" uid="uid://cfdkfeflfbhf8" path="res://scenes/player.tscn" id="1_o5qli"]
+[ext_resource type="PackedScene" uid="uid://udamcwbsiyp3" path="res://scenes/levels/level1.tscn" id="2_0wfyh"]
+
+[node name="Main" type="Node2D" unique_id=1081703285]
+
+[node name="Player" parent="." unique_id=970499377 instance=ExtResource("1_o5qli")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=864185584]
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1111892541]
+
+[node name="Environment" parent="." unique_id=1493936885 instance=ExtResource("2_0wfyh")]
